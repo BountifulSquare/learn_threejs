@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', 'sans-serif';
+        }
+
+        #canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        #score {
+            font-size: 6rem;
+            margin: 0;
+            color: #7A7A7A;
+        }
+
+        #start {
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            color: whitesmoke;
+            background-color: #3385FF;
+        }
+
+        .game-screen {
+            position: absolute;
+            width: 100%;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .scoreboard {
+            text-align: center;
+        }
+
+        .top-30 {
+            top: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-screen">
+        <div class="flex-center">
+            <div class="scoreboard">
+                <h4 id="score">000</h4>
+                <p>Press A to move to the left, D to move to the right</p>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="game-screen top-30">
+        <div class="flex-center">
+            <button id="start">
+                Press to Start
+            </button>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
