@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Game</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #canvas {
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+
+        #game-screen {
+            display: block;
+        }
+
+        .menu {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+        }
+
+        .menu-action {
+            display: flex;
+            justify-content: center;
+        }
+
+        #start {
+            padding: 0.5rem 0.75rem;
+            background-color: #BE0000;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-screen">
+        <div class="menu">
+            <div class="menu-action">
+                <button id="start">Press to Start</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
