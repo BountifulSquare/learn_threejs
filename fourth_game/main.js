@@ -1,5 +1,5 @@
-import { BufferGeometryUtils } from '../build/BufferGeometryUtils.js'
 import * as THREE from '../build/three.module.js'
+import { BufferGeometryUtils } from '../build/BufferGeometryUtils.js'
 
 class InputController {
     constructor() {
